@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Hamza<span>.</span></h2>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-btn">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <div class="menu-btn" id="menuBtn">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="name-tag">Hamza Portfolio — 2026</span>
+            <h1>Innovating Through <span>Frontend</span> Design</h1>
+            <h2 class="typing"></h2>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">Explore Work</a>
+                <a href="https://drive.google.com/file/d/1KrZ71KMaN1hTzcpewKxj3AmVbrui6Xq2/view?usp=sharing" class="btn outline" download>
+                    <i class="fas fa-file-download"></i> Get Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+        <h2 class="section-title">Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>Tailwind</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML/CSS</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <h2 class="section-title">All Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img-box">IUB</div>
+                <h3>IUB Landing Page</h3>
+                <div class="project-btns">
+                    <a href="https://iub-landing-page.vercel.app/" class="p-btn demo">Demo</a>
+                    <a href="https://github.com/hamzazkriya02/IUB-Landing-Page" class="p-btn github">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box">Portfolio</div>
+                <h3>Portfolio Website</h3>
+                <div class="project-btns">
+                    <a href="https://hamzazakriya.vercel.app/" class="p-btn demo">Demo</a>
+                    <a href="https://github.com/hamzazkriya02/My-Portfolio" class="p-btn github">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box">Course</div>
+                <h3>The Computer Course</h3>
+                <div class="project-btns">
+                    <a href="https://the-computer-courses-bahawalpur.vercel.app/" class="p-btn demo">Demo</a>
+                    <a href="#" class="p-btn github">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box">Store</div>
+                <h3>Tech Store</h3>
+                <div class="project-btns">
+                    <a href="https://tech-lab-website.vercel.app/" class="p-btn demo">Demo</a>
+                    <a href="https://github.com/hamzazkriya02/Tech-Website-" class="p-btn github">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box">App</div>
+                <h3>Taskmate App</h3>
+                <div class="project-btns">
+                    <a href="https://task-mate-44a4w68xa-hamzas-projects-00dbead3.vercel.app/" class="p-btn demo">Demo</a>
+                    <a href="https://github.com/hamzazkriya02/taskMate-app" class="p-btn github">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img-box">JS</div>
+                <h3>JS Calculator</h3>
+                <div class="project-btns">
+                     <a href="" class="p-btn demo">Demo</a> 
+                    <a href="" class="p-btn github">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="big-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Hamza<span>.</span></h2>
+                <p>High-performance UI/UX Developer.</p>
+                <a href="hamza-cv.pdf" class="cv-footer-link" download>Download My CV →</a>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="footer-social">
+                <h4>Social</h4>
+                <a href="www.linkedin.com/in/muhammad-hamza-315hz02"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/hamzazkriya02"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Hamza | Bahawalpur</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
